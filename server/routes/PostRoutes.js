@@ -2,11 +2,6 @@ import express from "express";
 import * as dotenv from "dotenv";
 import { v2 as cloudinary } from "cloudinary";
 import Post from "../Models/Post.js";
-import config from "config";
-
-const name = config.get("CloudName");
-const ApiKey = config.get("Cloud_Api_Key");
-const ApiKeySecret = config.get("Cloud_Api_Secret");
 
 dotenv.config();
 
@@ -14,9 +9,9 @@ const router = express.Router();
 
 // Configuring Cloudinary to store our images
 cloudinary.config({
-  cloud_name: name,
-  api_key: ApiKey,
-  api_secret: ApiKeySecret,
+  cloud_name: process.env.CloudName,
+  api_key: process.env.Cloud_Api_Key,
+  api_secret: process.env.Cloud_Api_Secret,
 });
 
 // Routes
