@@ -1,9 +1,6 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import { Configuration, OpenAIApi } from "openai";
-import config from "config";
-
-const apiKey = config.get("ApiKey");
 
 dotenv.config();
 

@@ -4,7 +4,6 @@ import cors from "cors";
 import connectDB from "./DB/connect.js";
 import PostRoutes from "./routes/PostRoutes.js";
 import dalleRoutes from "./routes/dalleRoutes.js";
-import config from "config";
 
 dotenv.config();
 
