@@ -17,7 +17,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use("/api/post", PostRoutes);
 app.use("/api/dalle", dalleRoutes);
 app.get("/", async (req, res) => {
-  res.setEncoding("hello from node");
+  res.send("hello from node");
 });
 
 // Connect to DB
