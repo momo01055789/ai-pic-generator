@@ -26,6 +26,6 @@ try {
 } catch (err) {
   console.log(err);
 }
-app.listen(3001, () => {
-  console.log("server has started on port 3001");
+app.listen(10000, () => {
+  console.log("server has started on port 10000");
 });

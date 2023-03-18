@@ -27,7 +27,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch("http://localhost:3001/api/dalle", {
+        const response = await fetch("http://localhost:10000/api/dalle", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const res = await fetch("http://localhost:3001/api/post", {
+        const res = await fetch("http://localhost:10000/api/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

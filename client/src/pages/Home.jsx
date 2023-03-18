@@ -39,7 +39,7 @@ const Home = () => {
   const fetchPosts = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3001/api/post", {
+      const res = await fetch("http://localhost:10000/api/post", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
