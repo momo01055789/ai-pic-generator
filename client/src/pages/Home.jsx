@@ -39,7 +39,7 @@ const Home = () => {
   const fetchPosts = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:10000/api/post", {
+      const res = await fetch("https://dalle-generator.onrender.com/api/post", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
